@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="GUI_0.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GUI_0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#1f3d7b"/>
+        <Border Grid.Column ="1" Grid.RowSpan="2" Background="Azure"/>
+        <Border Grid.Row ="1" Background="#1f3d7b"/>
+        <Border Grid.Row="2" Grid.ColumnSpan="2" Background="#152951"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="30" Foreground="White"  Margin="20" Text="t" VerticalAlignment="Center"/>
+            <TextBox x:Name="t" Grid.Column="1"/>
+            <TextBlock FontSize="30" Foreground="White" Grid.Row="1" Margin="20" Text="X_0" VerticalAlignment="Center"/>
+            <TextBox x:Name="X_0" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock FontSize="30" Foreground="White" Grid.Row="2" Margin="20" Text="V_0" VerticalAlignment="Center"/>
+            <TextBox x:Name="V_0" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock FontSize="30" Foreground="White" Grid.Row="3" Margin="20" Text="F_0" VerticalAlignment="Center"/>
+            <TextBox x:Name="F_0" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock FontSize="30" Foreground="White" Grid.Row="4" Margin="20" Text="m" VerticalAlignment="Center"/>
+            <TextBox x:Name="m" Grid.Row="4" Grid.Column="1"/>
+            <TextBlock FontSize="30" Foreground="White" Grid.Row="5" Margin="20" Text="t_0" VerticalAlignment="Center"/>
+            <TextBox x:Name="t_0" Grid.Row="5" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="30" Foreground="White" Margin="20" Text="X" VerticalAlignment="Center"/>
+            <TextBox x:Name="X" Grid.Column="1"/>
+            <TextBlock Grid.Row="1" FontSize="30" Foreground="White" Margin="20" Text="V" VerticalAlignment="Center"/>
+            <TextBox x:Name="V" Grid.Row="1" Grid.Column="1"/>
+            <Button Content="OK" FontSize="30" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_Click"/>
+            <Button Content="Reset" FontSize="30" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+    </Grid>
+</Page>
